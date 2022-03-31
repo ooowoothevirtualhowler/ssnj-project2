@@ -28,6 +28,7 @@
   "overriddenProperties": [
     {"propertyId":{"name":"starts_invincible","path":"objects/obj_avatar/obj_avatar.yy",},"objectId":{"name":"obj_avatar","path":"objects/obj_avatar/obj_avatar.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"show_healthbar","path":"objects/obj_avatar/obj_avatar.yy",},"objectId":{"name":"obj_avatar","path":"objects/obj_avatar/obj_avatar.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"show_invincibility","path":"objects/obj_avatar/obj_avatar.yy",},"objectId":{"name":"obj_avatar","path":"objects/obj_avatar/obj_avatar.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",

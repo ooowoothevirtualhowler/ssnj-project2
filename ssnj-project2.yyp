@@ -1,9 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"order":9,},
     {"id":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},"order":2,},
     {"id":{"name":"spr_item","path":"sprites/spr_item/spr_item.yy",},"order":3,},
     {"id":{"name":"obj_text_spawner","path":"objects/obj_text_spawner/obj_text_spawner.yy",},"order":5,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"scr_create_text","path":"scripts/scr_create_text/scr_create_text.yy",},"order":0,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":1,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":4,},
@@ -12,6 +14,7 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":3,},
     {"id":{"name":"obj_gui_inventory","path":"objects/obj_gui_inventory/obj_gui_inventory.yy",},"order":8,},
     {"id":{"name":"obj_avatar","path":"objects/obj_avatar/obj_avatar.yy",},"order":1,},
+    {"id":{"name":"spr_weapon","path":"sprites/spr_weapon/spr_weapon.yy",},"order":4,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

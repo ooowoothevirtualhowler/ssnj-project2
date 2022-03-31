@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_enemy",
-    "path": "sprites/spr_enemy/spr_enemy.yy",
+    "name": "spr_weapon",
+    "path": "sprites/spr_weapon/spr_weapon.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_avatar",
-    "path": "objects/obj_avatar/obj_avatar.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,15 +24,13 @@
   "properties": [
     {"varType":0,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"attack_damage","tags":[],"resourceType":"GMObjectProperty",},
   ],
-  "overriddenProperties": [
-    {"propertyId":{"name":"damaging_obj","path":"objects/obj_avatar/obj_avatar.yy",},"objectId":{"name":"obj_avatar","path":"objects/obj_avatar/obj_avatar.yy",},"value":"obj_weapon","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_enemy",
+  "name": "obj_weapon",
   "tags": [],
   "resourceType": "GMObject",
 }

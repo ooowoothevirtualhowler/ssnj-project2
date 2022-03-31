@@ -1,0 +1,1 @@
+talk("Hi. This is a talking test.", 360);
