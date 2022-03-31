@@ -1,7 +1,7 @@
 /// @description Draw Stuff
 
 // TODO: Rework to show collected items
-/*
+
 start_x = x - rect_xscale / 2;
 start_y = y - rect_yscale / 2;
 end_x = x + rect_xscale / 2;
@@ -26,24 +26,4 @@ for (i = 0; i < num_rows; i++) {
 		counter++;
 	}
 }
-*/
 
-draw_sprite_stretched(
-	spr_inventory,                               // Sprite
-	0,                                           // Frame
-	(obj_player.x - 64)-6,                       // x
-	(obj_player.y + 64)-6,                       // y
-	12+rowLength*36,                             // width
-	12+(((INVENTORY_SLOTS-1) div rowLength)+1)*36// height
-);
-
-for (var i = 0; i < INVENTORY_SLOTS; i += 1) 
-{
-	var xx = (obj_player.x - 64) + (i mod rowLength) * 36 + 2;
-	var yy = (obj_player.y + 64) + (i div rowLength) * 36 + 2;
-	draw_sprite(spr_slot, 0, xx, yy) 
-	if (inventory[i] != -1) {
-		draw_sprite(spr_items,inventory[i],xx,yy);	
-	}
-	
-}
