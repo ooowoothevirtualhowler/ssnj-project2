@@ -10,7 +10,18 @@ key_attack = keyboard_check_pressed(vk_control);
 
 // Movement
 hspeed = (key_right - key_left) * movement_speed;
+
+// Check for walls (x direction)
+if place_meeting(x + hspeed, y, obj_wall) {
+	hspeed = 0;
+}
+
 vspeed = (key_down - key_up) * movement_speed;
+
+// Check for walls (y direction)
+if place_meeting(x, y + vspeed, obj_wall) {
+	vspeed = 0;
+}
 
 // Attack
 if key_attack and !weapon_out {

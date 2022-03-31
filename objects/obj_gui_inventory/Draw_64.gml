@@ -6,9 +6,7 @@ start_x = x - rect_xscale / 2;
 start_y = y - rect_yscale / 2;
 end_x = x + rect_xscale / 2;
 end_y = y + rect_yscale / 2;
-
 counter = 0;
-
 draw_set_color(c_gray);
 draw_rectangle(start_x - padding, start_y - padding, end_x, end_y, false);
 draw_set_color(c_white);
@@ -28,3 +26,4 @@ for (i = 0; i < num_rows; i++) {
 		counter++;
 	}
 }
+
