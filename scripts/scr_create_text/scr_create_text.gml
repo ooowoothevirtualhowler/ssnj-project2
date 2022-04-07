@@ -6,4 +6,5 @@ function create_text(pos_x, pos_y, text, destroy_after = -1, alpha = 1.0, color 
 	text_inst.text_color = color;
 	text_inst.text_to_draw = text;
 	text_inst.destroy_after = destroy_after;
+	return text_inst;
 }
