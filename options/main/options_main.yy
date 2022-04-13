@@ -1,5 +1,5 @@
 {
-  "option_gameguid": "66e424f6-9d9e-4f4f-a913-8f87c6b3e045",
+  "option_gameguid": "e27a99b3-41b9-4f89-a927-4a86975baa13",
   "option_gameid": "0",
   "option_game_speed": 60,
   "option_mips_for_3d_textures": false,
@@ -8,7 +8,7 @@
   "option_steam_app_id": "0",
   "option_sci_usesci": false,
   "option_author": "",
-  "option_collision_compatibility": false,
+  "option_collision_compatibility": true,
   "option_lastchanged": "",
   "option_spine_licence": false,
   "option_template_image": "${base_options_dir}/main/template_image.png",

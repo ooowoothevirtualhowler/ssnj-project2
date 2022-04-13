@@ -6,9 +6,11 @@ x2 = x + x_padding;
 y2 = y + y_padding;
 
 function within_bounds() {
-	return x1 <= mouse_x and mouse_x <= x2 and y1 <= mouse_y and mouse_y <= y2;
+	click_x = device_mouse_x_to_gui(0);
+	click_y = device_mouse_y_to_gui(0);
+	return x1 <= click_x and click_x <= x2 and y1 <= click_y and click_y <= y2;
 }
 
 function button_up() {
-	return !mouse_check_button(mb_left) or !within_bounds();
+	return !device_mouse_check_button(0, mb_left) or !within_bounds();
 }

@@ -15,21 +15,38 @@ function change_state(new_state) {
 	event_perform(ev_other, ev_user0);
 }
 
-menu_stuff = array_create(1);
+menu_stuff = array_create(0);
 
 // Inventory
-// TODO: Rework to show collected items
-num_items = 30;
 
-item_width = 64;
-item_height = 64;
+// Wait until opened to calculate for first time
+num_item_slots = noone;
+
+no_items_msg = noone;
+
+item_width = 200;
+item_height = 115;
+
 padding = 5;
+quit_padding = 30;
 
-num_rows = 10;
-num_cols = ceil(num_items / num_rows);
+num_rows = 5;
 
 rect_xscale = (item_width + padding) * num_rows;
-rect_yscale = (item_height + padding) * num_cols;
 
 start_x = room_width / 2 - rect_xscale / 2;
-start_y = room_height / 2 - rect_yscale / 2;
+
+function compute_inventory(refresh=true) {
+	num_item_slots = array_length(obj_player.inventory);
+	
+	num_cols = ceil(num_item_slots / num_rows);
+	
+	rect_yscale = (item_height + padding) * num_cols;
+	
+	start_y = room_height / 2 - rect_yscale / 2;
+	
+	// Refresh the screen
+	if refresh
+		event_perform(ev_other, ev_user0);
+}
+
