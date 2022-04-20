@@ -17,7 +17,7 @@ if pos < 0 {
 if accept_key {
 switch pos {
 	case 0:		
-		room_goto(Room1);
+		room_goto(Petra_House);
 		break;
 		
 	case 1:

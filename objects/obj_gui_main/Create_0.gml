@@ -43,7 +43,7 @@ function compute_inventory(refresh=true) {
 	
 	rect_yscale = (item_height + padding) * num_cols;
 	
-	start_y = room_height / 2 - rect_yscale / 2;
+	start_y = room_height / 2 - rect_yscale / 2 - 150;
 	
 	// Refresh the screen
 	if refresh

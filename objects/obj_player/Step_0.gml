@@ -7,6 +7,7 @@ key_right = keyboard_check(vk_right);
 key_up = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);
 key_attack = keyboard_check_pressed(vk_control);
+//Interaction Button: Press A
 
 // Movement
 if !weapon_out {
@@ -15,9 +16,20 @@ if !weapon_out {
 	if place_meeting(x + hspeed + (sign(hspeed) * wall_padding), y, obj_wall) {
 		hspeed = 0;
 	}
+	
+	//Breakable Block
+	if place_meeting(x + hspeed + (sign(hspeed) * wall_padding), y, obj_block) {
+		hspeed = 0;
+	}
+	
 	vspeed = (key_down - key_up) * movement_speed;
 	// Check for walls (y direction)
 	if place_meeting(x, y + vspeed + (sign(vspeed) * wall_padding), obj_wall) {
+		vspeed = 0;
+	}
+	
+	//Breakable Block
+	if place_meeting(x, y + vspeed + (sign(vspeed) * wall_padding), obj_block) {
 		vspeed = 0;
 	}
 }
@@ -45,6 +57,7 @@ if key_attack and !weapon_out {
 		}
 	
 		weapon_inst = instance_create_layer(weapon_x, weapon_y, "Instances", obj_weapon);
+		obj_weapon.visible = false;
 		alarm[1] = weapon_cooldown;
 	} else {
 		talk("I don't have a weapon\nso I can't attack.", 90);
@@ -116,4 +129,18 @@ if vspeed == 0 && hspeed == 0 {
 			sprite_index = spr_player_pickaxe_right;
 		}
 	}
+}
+
+//Ladder
+if (place_meeting(x,y,obj_ladder)) {
+	
+	vspeed = 0;
+	if (key_up) {
+	    vspeed -= 5;
+	}
+	
+	if (key_down) {
+	    vspeed += 5;
+	}
+	
 }
